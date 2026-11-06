@@ -1,0 +1,7 @@
+LinkedIn Profile:
+https://www.linkedin.com/in/alex-morgan-fictional-profile
+
+Project & Chart Links:
+1. Customer Churn Prediction Dashboard: https://github.com/alexmorgan-demo/churn-prediction-model
+2. Real-Time Demand Forecasting Chart: https://public.tableau.com/profile/alexmorgan#!/vizhome/DemandForecasting2026
+3. Open-Source Data Analytics Toolkit: https://github.com/alexmorgan-demo/data-utils-py

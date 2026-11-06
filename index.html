@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alex Morgan – Data Scientist</title>
+<meta name="description" content="Alex Morgan – Senior Data Scientist specializing in predictive modeling and operational analytics.">
+<style>
+  :root {
+    --blue: #1d4e89;
+    --blue-dark: #14365f;
+    --blue-light: #eaf1fa;
+    --orange: #e8771e;
+    --orange-text: #a8530f;
+    --text: #1f2933;
+    --muted: #52606d;
+    --bg: #ffffff;
+    --line: #d9e2ec;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+  }
+  a { color: var(--blue); text-underline-offset: 3px; }
+  a:hover, a:focus { color: var(--orange-text); }
+  a:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+  .skip { position: absolute; left: -999px; }
+  .skip:focus { left: 12px; top: 12px; background: #fff; padding: 8px 12px; z-index: 10; }
+
+  nav { background: var(--blue-dark); }
+  nav ul { list-style: none; margin: 0; padding: 10px 0; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+  nav a { color: #fff; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+  nav a:hover, nav a:focus { color: #ffc999; }
+
+  header.hero { background: var(--blue); color: #fff; padding: 48px 0 44px; border-bottom: 6px solid var(--orange); }
+  .hero .wrap { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+  .portrait {
+    width: 170px; height: 170px; border-radius: 50%;
+    object-fit: cover; border: 5px solid var(--orange); background: #fff; flex-shrink: 0;
+    max-width: 100%;
+  }
+  .hero h1 { margin: 0 0 6px; font-size: 2.4rem; line-height: 1.2; }
+  .hero p { margin: 0; font-size: 1.2rem; max-width: 34ch; }
+
+  main section { padding: 44px 0; border-bottom: 1px solid var(--line); }
+  h2 { color: var(--blue); font-size: 1.7rem; margin: 0 0 18px; }
+  h2::after { content: ""; display: block; width: 56px; height: 4px; background: var(--orange); margin-top: 8px; border-radius: 2px; }
+  h3 { color: var(--blue-dark); font-size: 1.2rem; margin: 26px 0 10px; }
+
+  .timeline { list-style: none; margin: 0; padding: 0 0 0 22px; border-left: 3px solid var(--blue-light); }
+  .timeline li { position: relative; margin-bottom: 22px; }
+  .timeline li::before {
+    content: ""; position: absolute; left: -31px; top: 6px;
+    width: 15px; height: 15px; border-radius: 50%; background: var(--orange); border: 3px solid #fff;
+  }
+  .when { display: inline-block; font-weight: 700; color: var(--orange-text); font-size: 0.95rem; }
+  .role { font-weight: 700; color: var(--blue-dark); display: block; }
+  .org { color: var(--muted); }
+  .timeline ul { margin: 6px 0 0; padding-left: 20px; }
+  .timeline ul li::before { display: none; }
+  .timeline ul li { margin-bottom: 4px; }
+
+  .skills { display: grid; gap: 12px; margin: 0; }
+  .skills div { background: var(--blue-light); border-left: 4px solid var(--blue); padding: 12px 16px; border-radius: 4px; }
+  .skills dt { font-weight: 700; color: var(--blue-dark); }
+  .skills dd { margin: 0; }
+
+  .note { color: var(--muted); font-style: italic; }
+  .cv-download { margin-top: 22px; font-weight: 600; }
+
+  .cards { display: grid; gap: 24px; }
+  .card { border: 1px solid var(--line); border-top: 5px solid var(--orange); border-radius: 6px; padding: 20px; background: #fff; }
+  .card h3 { margin-top: 0; }
+  .card p { margin: 8px 0; }
+  .label { font-weight: 700; color: var(--blue-dark); }
+  .chart-slot { margin: 14px 0; }
+  .chart-slot img { display: block; border: 1px solid var(--line); border-radius: 4px; }
+  .coming { background: var(--blue-light); color: var(--blue-dark); padding: 26px; text-align: center; border-radius: 4px; font-weight: 600; }
+  .caption { font-size: 0.97rem; }
+  .credit { font-size: 0.9rem; color: var(--muted); }
+  .tag { display: inline-block; background: #fff1e5; color: var(--orange-text); border: 1px solid #f5c79f; font-size: 0.85rem; font-weight: 700; padding: 2px 10px; border-radius: 999px; }
+
+  .btn { display: inline-block; background: var(--orange); color: #1a1a1a; font-weight: 700; text-decoration: none; padding: 10px 20px; border-radius: 6px; }
+  .btn:hover, .btn:focus { background: #f08a36; color: #1a1a1a; }
+
+  footer { background: var(--blue-dark); color: #fff; padding: 24px 0; font-size: 0.95rem; }
+  footer p { margin: 4px 0; }
+
+  @media (max-width: 560px) {
+    .hero .wrap { flex-direction: column; text-align: center; }
+    .hero h1 { font-size: 2rem; }
+    .portrait { width: 140px; height: 140px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav aria-label="Main">
+  <ul class="wrap">
+    <li><a href="#about">About</a></li>
+    <li><a href="#cv">CV</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- 1) Header -->
+<header class="hero">
+  <div class="wrap">
+    <img class="portrait" src="profile.png" alt="Portrait of Alex Morgan" width="170" height="170">
+    <div>
+      <h1>Alex Morgan</h1>
+      <p>Senior Data Scientist specializing in predictive modeling and operational analytics.</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 2) About -->
+  <section id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <p>Alex Morgan is a Lead Data Scientist with over 7 years of experience building machine learning models and scalable data pipelines in high-growth tech environments. Passionate about leveraging quantitative insights to drive operational efficiency and product innovation.</p>
+    </div>
+  </section>
+
+  <!-- 3) CV -->
+  <section id="cv">
+    <div class="wrap">
+      <h2>CV</h2>
+      <p>Senior Data Scientist with 7+ years of experience in statistical analysis, machine learning, and data engineering. Track record of designing end-to-end data products that increase efficiency and revenue.</p>
+
+      <h3>Experience</h3>
+      <ol class="timeline">
+        <li>
+          <span class="when">2021 – Present</span>
+          <span class="role">Lead Data Scientist</span>
+          <span class="org">DataScale Solutions</span>
+          <ul>
+            <li>Led a team of 4 data scientists delivering machine learning solutions for client conversion and churn prediction.</li>
+            <li>Designed and deployed dynamic forecasting models, reducing inventory overhead by 18%.</li>
+            <li>Built automated ETL pipelines using Python, SQL, and Airflow processing over 10TB daily data.</li>
+          </ul>
+        </li>
+        <li>
+          <span class="when">2019 – 2021</span>
+          <span class="role">Data Scientist</span>
+          <span class="org">TechCorp Inc.</span>
+          <ul>
+            <li>Developed customer segmentation models using K-Means and Random Forest, improving targeted ad CTR by 24%.</li>
+            <li>Partnered with product teams to design and analyze A/B tests for feature launches.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3>Education</h3>
+      <ol class="timeline">
+        <li>
+          <span class="when">2017 – 2019</span>
+          <span class="role">Master of Science in Data Science</span>
+          <span class="org">University of California, Berkeley</span>
+        </li>
+        <li>
+          <span class="when">2013 – 2017</span>
+          <span class="role">Bachelor of Science in Statistics &amp; Computer Science</span>
+          <span class="org">University of Washington</span>
+        </li>
+      </ol>
+
+      <h3>Skills</h3>
+      <dl class="skills">
+        <div>
+          <dt>Technical</dt>
+          <dd>Python (Pandas, NumPy, Scikit-Learn, PyTorch), SQL, R, Spark, Docker, Git</dd>
+        </div>
+        <div>
+          <dt>Analytics &amp; Visualization</dt>
+          <dd>Tableau, PowerBI, Matplotlib, Seaborn</dd>
+        </div>
+        <div>
+          <dt>Methodology</dt>
+          <dd>Machine Learning, Time Series Forecasting, A/B Testing, Statistical Modeling</dd>
+        </div>
+      </dl>
+
+      <p class="cv-download note">CV download coming soon</p>
+    </div>
+  </section>
+
+  <!-- 4) Data Visualisation Portfolio -->
+  <section id="portfolio">
+    <div class="wrap">
+      <h2>Data Visualisation Portfolio</h2>
+      <div class="cards">
+
+        <!-- Card 1: Chart 1 -->
+        <article class="card">
+          <h3>[PLACEHOLDER: Chart 1 title]</h3>
+          <p><span class="label">Question:</span> [PLACEHOLDER: one-line question this chart answers]</p>
+          <p><span class="label">Data source:</span> [PLACEHOLDER: data source]</p>
+          <div class="chart-slot">
+            <img src="images/chart1.png" alt="[PLACEHOLDER: alt text describing Chart 1]" style="max-width:100%;height:auto">
+          </div>
+          <p class="caption"><span class="label">What to notice:</span> [PLACEHOLDER: short caption]</p>
+          <p class="credit">[PLACEHOLDER: credit line]</p>
+          <p><span class="tag">[PLACEHOLDER: "copy of a course chart" label]</span></p>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <h3>Customer Churn Prediction Dashboard</h3>
+          <p><span class="label">Question:</span> [PLACEHOLDER: one-line question this chart answers]</p>
+          <p><span class="label">Data source:</span> [PLACEHOLDER: data source]</p>
+          <div class="chart-slot"><p class="coming">Chart coming soon</p></div>
+          <p><a href="https://github.com/alexmorgan-demo/churn-prediction-model" target="_blank" rel="noopener">View the project on GitHub</a></p>
+          <p class="caption"><span class="label">What to notice:</span> [PLACEHOLDER: short caption]</p>
+          <p class="credit">[PLACEHOLDER: credit line]</p>
+          <p><span class="tag">[PLACEHOLDER: "copy of a course chart" label]</span></p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <h3>Real-Time Demand Forecasting Chart</h3>
+          <p><span class="label">Question:</span> [PLACEHOLDER: one-line question this chart answers]</p>
+          <p><span class="label">Data source:</span> [PLACEHOLDER: data source]</p>
+          <div class="chart-slot"><p class="coming">Chart coming soon</p></div>
+          <p><a href="https://public.tableau.com/profile/alexmorgan#!/vizhome/DemandForecasting2026" target="_blank" rel="noopener">View the chart on Tableau Public</a></p>
+          <p class="caption"><span class="label">What to notice:</span> [PLACEHOLDER: short caption]</p>
+          <p class="credit">[PLACEHOLDER: credit line]</p>
+          <p><span class="tag">[PLACEHOLDER: "copy of a course chart" label]</span></p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5) Contact -->
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>The best way to reach me is on LinkedIn.</p>
+      <p><a class="btn" href="https://www.linkedin.com/in/alex-morgan-fictional-profile" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- 6) Footer -->
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Alex Morgan</p>
+    <p>Built with the help of generative AI; content and decisions are my own.</p>
+  </div>
+</footer>
+</body>
+</html>
