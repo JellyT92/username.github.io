@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Big Mac index, house-style study – Alex Morgan</title>
+<style>
+  :root {
+    --blue: #1d4e89;
+    --blue-dark: #14365f;
+    --blue-light: #eaf1fa;
+    --orange: #e8771e;
+    --orange-text: #a8530f;
+    --text: #1f2933;
+    --muted: #52606d;
+    --bg: #ffffff;
+    --line: #d9e2ec;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+  }
+  a { color: var(--blue); text-underline-offset: 3px; }
+  a:hover, a:focus { color: var(--orange-text); }
+  a:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+  .skip { position: absolute; left: -999px; }
+  .skip:focus { left: 12px; top: 12px; background: #fff; padding: 8px 12px; z-index: 10; }
+
+  nav { background: var(--blue-dark); }
+  nav ul { list-style: none; margin: 0; padding: 10px 0; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+  nav a { color: #fff; text-decoration: none; font-weight: 600; font-size: 1rem; }
+  nav a:hover, nav a:focus { color: #ffc999; }
+
+  header.hero { background: var(--blue); color: #fff; padding: 40px 0 36px; border-bottom: 6px solid var(--orange); }
+  .hero h1 { margin: 0; font-size: 2.2rem; line-height: 1.2; }
+
+  main section { padding: 36px 0; border-bottom: 1px solid var(--line); }
+  h2 { color: var(--blue); font-size: 1.5rem; margin: 0 0 16px; }
+  h2::after { content: ""; display: block; width: 56px; height: 4px; background: var(--orange); margin-top: 8px; border-radius: 2px; }
+  .question { font-size: 1.2rem; font-weight: 600; color: var(--blue-dark); margin: 0; }
+  .chart-box { border: 1px solid var(--line); border-top: 5px solid var(--orange); border-radius: 6px; overflow: hidden; }
+  .back { font-weight: 600; }
+
+  footer { background: var(--blue-dark); color: #fff; padding: 24px 0; font-size: 1rem; }
+  footer p { margin: 4px 0; }
+
+  @media (max-width: 560px) { .hero h1 { font-size: 1.8rem; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav aria-label="Main">
+  <ul class="wrap">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#cv">CV</a></li>
+    <li><a href="index.html#portfolio">Portfolio</a></li>
+    <li><a href="project1.html" aria-current="page">Project 1</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Big Mac index, house-style study</h1>
+  </div>
+</header>
+
+<main id="main">
+
+  <section>
+    <div class="wrap">
+      <h2>The question</h2>
+      <p class="question">Is a country's currency too strong or too weak, judged by what a Big Mac costs there compared with the US?</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>The chart</h2>
+      <div class="chart-box">
+        <iframe src="charts/chart1.html" height="500" title="Interactive bar chart of the Big Mac index: how over- or undervalued each country's currency is against the US dollar or another chosen currency, with a date slider" style="width:100%;border:0"></iframe>
+      </div>
+      <p><a href="charts/chart1.html" target="_blank" rel="noopener">Open the chart in a new tab</a></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>What I found</h2>
+      <p>The chart compares each country's Big Mac price, converted into US dollars at the market exchange rate, with the US price. In July 2026, a Big Mac in Switzerland cost 45% more than in the US, so the Swiss franc looks 45% overvalued.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Data credit</h2>
+      <p>Source: Big Mac index data from <a href="https://github.com/TheEconomist/big-mac-data" target="_blank" rel="noopener">The Economist’s big-mac-data repository</a> (open data, <a href="https://github.com/TheEconomist/big-mac-data/blob/master/LICENCE" target="_blank" rel="noopener">MIT licence</a>).</p>
+      <p>This chart is a recreation of the MSIN0167 course target, built as a class exercise with AI assistance and inspired by The Economist’s Big Mac index. It is not an Economist publication.</p>
+      <p class="back"><a href="index.html">← Back to the home page</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Alex Morgan</p>
+    <p>Built with the help of generative AI; content and decisions are my own.</p>
+  </div>
+</footer>
+</body>
+</html>
